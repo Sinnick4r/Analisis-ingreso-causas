@@ -77,21 +77,21 @@ El archivo `Estadistica ingresos 2020-2024.pbix` contiene un análisis de los da
 - Se filtraron registros irrelevantes para el análisis, como delitos con valores nulos o categorías no consideradas.
 - se ilimaron columnas que no iban a usarse
 - Se agregaron columnas calculadas:
-  - **es delito X**: Para clasificar los delitos según su naturaleza
+- **es delito X**: Para clasificar los delitos según su naturaleza
 
 ### 3. Medidas Calculadas
 Se crearon las siguientes medidas en Power BI para facilitar el análisis:
 
 - **Total de ingresos por año**:
---con la fórmula  COUNTROWS('Dataset juzgado')
+  --con la fórmula  COUNTROWS('Dataset juzgado')
   
 - **total de causas de tipo X**:
   
---con la fórmula COUNTROWS(FILTER('Dataset juzgado', 'Dataset juzgado'[es delito sexual] = TRUE()))
+  --con la fórmula COUNTROWS(FILTER('Dataset juzgado', 'Dataset juzgado'[es delito sexual] = TRUE()))
   
 - **total de tramites X**:
-- 
--- Con la fórmulaCALCULATE(COUNTROWS('Dataset juzgado'), NOT (CONTAINSSTRING('Dataset juzgado'[tipo trámite], "sjp") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "elevación") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "sobreseimiento") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "allanamiento") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "seguridad")|| CONTAINSSTRING('Dataset juzgado'[tipo trámite], "competencia")|| CONTAINSSTRING('Dataset juzgado'[tipo trámite], "amparo")))
+ 
+  -- Con la fórmulaCALCULATE(COUNTROWS('Dataset juzgado'), NOT (CONTAINSSTRING('Dataset juzgado'[tipo trámite], "sjp") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "elevación") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "sobreseimiento") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "allanamiento") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "seguridad")|| CONTAINSSTRING('Dataset juzgado'[tipo trámite], "competencia")|| CONTAINSSTRING('Dataset juzgado'[tipo trámite], "amparo")))
 Se muestra esa formula que es la mas larga, para cada categoría especifica se utilizó el CONTAINSTRING que corespondia
 
 ### 4. Visualizaciones
