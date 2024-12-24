@@ -10,6 +10,7 @@ El proyecto está organizado de la siguiente manera:
 ```
 limpieza-datos-proyecto/
 ├── README.md              # Documentación principal del proyecto
+├── LICENSE.md              # Documentación respecto a la licencia del proyecto
 ├── data/
 │   ├── original/          # Datos originales (sin información sensible)
 │   │   ├── Dataset Limpio.xlsx
@@ -17,8 +18,8 @@ limpieza-datos-proyecto/
 │   ├── procesada/         # Datos procesados y limpios
 │       └── Dataset juzgado.csv
 ├── analisis/
-│   ├── Estadistica ingresos 2020-2024.pdf # Exportación de los gráficos de PowerBI para una visualización general
-    └── Estadistica ingresos 2020-2024.pbix # Archivo de Power BI del dashboard con visualizaciones interactivas
+    ├── Estadistica ingresos 2020-2024.pdf # Gráficos de PowerBI para una visualización general
+    └── Estadistica ingresos 2020-2024.pbix # Archivo de Power BI del dashboard
 
 ```
 
@@ -95,7 +96,7 @@ Se crearon las siguientes medidas en Power BI para facilitar el análisis:
   
 - **total de tramites X**:
  
-  - Con la fórmulaCALCULATE(COUNTROWS('Dataset juzgado'), NOT (CONTAINSSTRING('Dataset juzgado'[tipo trámite], "sjp") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "elevación") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "sobreseimiento") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "allanamiento") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "seguridad")|| CONTAINSSTRING('Dataset juzgado'[tipo trámite], "competencia")|| CONTAINSSTRING('Dataset juzgado'[tipo trámite], "amparo")))
+  - Con la fórmula: CALCULATE(COUNTROWS('Dataset juzgado'), NOT (CONTAINSSTRING('Dataset juzgado'[tipo trámite], "sjp") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "elevación") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "sobreseimiento") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "allanamiento") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "seguridad")|| CONTAINSSTRING('Dataset juzgado'[tipo trámite], "competencia")|| CONTAINSSTRING('Dataset juzgado'[tipo trámite], "amparo")))
 Se muestra esa formula que es la mas larga, para cada categoría especifica se utilizó el CONTAINSTRING que corespondia
 
 ### 4. Visualizaciones
