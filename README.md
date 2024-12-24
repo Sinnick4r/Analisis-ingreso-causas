@@ -120,7 +120,7 @@ Las principales visualizaciones incluyen:
   - Eliminación de cualquier vestigio de nombre propio.
   - Eliminación de columnas intrascendentes.
   - Estandarización de formatos en 2 columnas clave.
--**Visualización**
+- **Visualización**
     [Dashboard interactivo](https://app.powerbi.com/view?r=eyJrIjoiZmNlNTgxOGQtMTcyNy00ZmNlLWJkM2ItNDYwNDg4OWYxMDE1IiwidCI6ImMyMjU5NDE5LWRiZGQtNDI5MC05ZWFmLWJhODNiZjQzNDkyNiIsImMiOjR9)
 
 
