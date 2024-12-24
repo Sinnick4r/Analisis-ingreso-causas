@@ -72,7 +72,7 @@ Los datos procesados se guardaron en `Dataset juzgado.csv` para su uso posterior
   - Estandarización de formatos en 2 columnas clave.
 
 ## Licencia
-Este proyecto está licenciado bajo la [nombre de la licencia, ej. MIT License]. Consulta el archivo `LICENSE` para más información.
+Este proyecto está licenciado bajo la licencia CC BY 4.0. Consulta el archivo `LICENSE` para más información.
 
 ## Contacto
 Para más información o dudas, puedes contactar al propietario del proyecto a través de emilioge@protonmail.com.
