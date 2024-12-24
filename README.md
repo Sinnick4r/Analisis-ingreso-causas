@@ -10,7 +10,7 @@ El proyecto está organizado de la siguiente manera:
 ```
 limpieza-datos-proyecto/
 ├── README.md              # Documentación principal del proyecto
-├── LICENSE.md              # Documentación respecto a la licencia del proyecto
+├── LICENSE                # Documentación respecto a la licencia del proyecto
 ├── data/
 │   ├── original/          # Datos originales (sin información sensible)
 │   │   ├── Dataset Limpio.xlsx
