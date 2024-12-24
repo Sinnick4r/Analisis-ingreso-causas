@@ -28,7 +28,7 @@ limpieza-datos-proyecto/
 - **analisis/**: Contiene el archivo Power BI y otros análisis derivados.
 
 ### Esquema de Registro Original
-- Se subio este archivo para que se pueda ver como era el archivo xlsx original en cuanto a columnas y campos. Por cuestioens de privacidad no puedo subir el archivo original.
+- Se subió este archivo para que se pueda ver como era el archivo xlsx original en cuanto a columnas y campos. Por cuestiones de privacidad no puedo subir el archivo original.
 
 ## Proceso de Limpieza de Datos
 
