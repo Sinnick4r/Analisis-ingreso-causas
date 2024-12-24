@@ -86,10 +86,11 @@ Se crearon las siguientes medidas en Power BI para facilitar el análisis:
     Causas ingresadas = COUNTROWS('Dataset juzgado')
   
 - **total de causas de tipo X**:
+  
 - Total de Causas de abuso sexual = COUNTROWS(FILTER('Dataset juzgado', 'Dataset juzgado'[es delito sexual] = TRUE()))
-- **total de tramites X**:
-- Total Otros Trámites = CALCULATE(COUNTROWS('Dataset juzgado'), NOT (CONTAINSSTRING('Dataset juzgado'[tipo trámite], "sjp") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "elevación") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "sobreseimiento") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "allanamiento") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "seguridad")|| CONTAINSSTRING('Dataset juzgado'[tipo trámite], "competencia")|| CONTAINSSTRING('Dataset juzgado'[tipo trámite], "amparo")))
-  Se muestra esa formula que es la mas larga, para cada categoría especifica se utilizó el CONTAINSTRING que corespondia
+  
+- **total de tramites X**:  Total Otros Trámites = CALCULATE(COUNTROWS('Dataset juzgado'), NOT (CONTAINSSTRING('Dataset juzgado'[tipo trámite], "sjp") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "elevación") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "sobreseimiento") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "allanamiento") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "seguridad")|| CONTAINSSTRING('Dataset juzgado'[tipo trámite], "competencia")|| CONTAINSSTRING('Dataset juzgado'[tipo trámite], "amparo")))
+Se muestra esa formula que es la mas larga, para cada categoría especifica se utilizó el CONTAINSTRING que corespondia
 
 ### 4. Visualizaciones
 Las principales visualizaciones incluyen:
