@@ -1,7 +1,7 @@
 # Proyecto de Limpieza de Datos - Estadísticas de Juzgado
 
 ## Introducción
-Este repositorio contiene el proyecto de limpieza de datos que hice usando un Excel del lugar en el cual trabajo actualmente. Incluye los archivos procesados, un archivo de Power BI para visualización, y documentación detallada del proceso realizado. Este Excel fue usado por, como mínimo, 5 personas, por lo cual contaba con inconsistencias, errores, abreviaciones mal hechas, cosas mal ingresadas, etc.
+Este repositorio contiene el proyecto de limpieza de datos que hice usando un Excel del lugar en el cual trabajo actualmente, a los fines de practicar ya que no puedo utilizar otra cosna en la computadora que uso ahí. Incluye los archivos procesados, un archivo de Power BI para visualización, y documentación detallada del proceso realizado. Este Excel fue usado por, como mínimo, 5 personas, por lo cual contaba con inconsistencias, errores, abreviaciones mal hechas, cosas mal ingresadas, etc.
 
 ## Estructura del Proyecto
 
