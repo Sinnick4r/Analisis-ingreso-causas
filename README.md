@@ -120,7 +120,7 @@ Las principales visualizaciones incluyen:
 
 
 ## Licencia
-Este proyecto está licenciado bajo la licencia CC BY 4.0. Consulta el archivo `LICENSE` para más información.
+Este proyecto está licenciado bajo la licencia Creative Commons Zero. Consulta el archivo `LICENSE` para más información.
 
 ## Contacto
 Para más información o dudas, puedes contactar al propietario del proyecto a través de emilioge@protonmail.com.
