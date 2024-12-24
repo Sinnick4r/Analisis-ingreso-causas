@@ -82,7 +82,7 @@ El archivo `Estadistica ingresos 2020-2024.pbix` contiene un análisis de los da
 - Se filtraron registros irrelevantes para el análisis, como delitos con valores nulos o categorías no consideradas.
 - se ilimaron columnas que no iban a usarse
 - Se agregaron columnas calculadas:
-- **es delito X**: Para clasificar los delitos según su naturaleza
+  - **es delito X**: Para clasificar los delitos según su naturaleza
 
 ### 3. Medidas Calculadas
 Se crearon las siguientes medidas en Power BI para facilitar el análisis:
@@ -102,7 +102,7 @@ Se muestra esa formula que es la mas larga, para cada categoría especifica se u
 ### 4. Visualizaciones
 Las principales visualizaciones incluyen:
 - **Gráficos de lineas**: Distribución de causas ingresadas por año
-- **tarjetas**: Para señalar el número de causas ingresdadas, delitos, etc.
+- **Tarjetas**: Para señalar el número de causas ingresdadas, delitos, etc.
 - **Gráficos de columnas**: Distribución de causas por empleado
 - **Gráficos circulares**: Distribución de trámites y distribución de delitos sexuales.
 
