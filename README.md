@@ -1,7 +1,7 @@
 # Proyecto de Limpieza de Datos - Estadísticas de Juzgado
 
 ## Introducción
-Este repositorio contiene el proyecto de limpieza de datos que hice usando un Excel del lugar en el cual trabajo actualmente, a los fines de practicar ya que no puedo utilizar otra cosna en la computadora que uso ahí. Incluye los archivos procesados, un archivo de Power BI para visualización, y documentación detallada del proceso realizado. Este Excel fue usado por, como mínimo, 5 personas, por lo cual contaba con inconsistencias, errores, abreviaciones mal hechas, cosas mal ingresadas, etc.
+Este repositorio contiene el proyecto de limpieza de datos que hice usando un Excel del lugar en el cual trabajo actualmente. Incluye los archivos procesados, un archivo de Power BI para visualización, y documentación detallada del proceso realizado. Este Excel fue usado por, como mínimo, 5 personas, por lo cual contaba con inconsistencias, errores, abreviaciones mal hechas, cosas mal ingresadas, etc.
 
 ## Estructura del Proyecto
 
@@ -65,11 +65,54 @@ Esto lo realicé utilizando la función de buscar y reemplazar tiempo antes de e
 ### 5. Exportación Final
 Los datos procesados se guardaron en `Dataset juzgado.csv` para su uso posterior.
 
+## Análisis y Visualizaciones en Power BI
+
+El archivo `Estadistica ingresos 2020-2024.pbix` contiene un análisis de los datos procesados. A continuación, se describe el proceso realizado en Power BI:
+
+### 1. Importación de Datos
+- Se utilizó el archivo `Dataset juzgado.csv` como fuente principal de datos.
+
+### 2. Limpieza y Transformación en Power Query
+- Se ajustaron los tipos de datos (fechas, texto y números).
+- Se filtraron registros irrelevantes para el análisis, como delitos con valores nulos o categorías no consideradas.
+- se ilimaron columnas que no iban a usarse
+- Se agregaron columnas calculadas:
+  - **es delito X**: Para clasificar los delitos según su naturaleza
+
+### 3. Medidas Calculadas
+Se crearon las siguientes medidas en Power BI para facilitar el análisis:
+
+- **Total de ingresos por año**:
+    Causas ingresadas = COUNTROWS('Dataset juzgado')
+  
+- **total de causas de tipo X**:
+- Total de Causas de abuso sexual = COUNTROWS(FILTER('Dataset juzgado', 'Dataset juzgado'[es delito sexual] = TRUE()))
+- - **total de tramites X**:
+- Total Otros Trámites = CALCULATE(COUNTROWS('Dataset juzgado'), NOT (CONTAINSSTRING('Dataset juzgado'[tipo trámite], "sjp") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "elevación") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "sobreseimiento") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "allanamiento") || CONTAINSSTRING('Dataset juzgado'[tipo trámite], "seguridad")|| CONTAINSSTRING('Dataset juzgado'[tipo trámite], "competencia")|| CONTAINSSTRING('Dataset juzgado'[tipo trámite], "amparo")))
+  Se muestra esa formula que es la mas larga, para cada categoría especifica se utilizó el CONTAINSTRING que corespondia
+
+### 4. Visualizaciones
+Las principales visualizaciones incluyen:
+- **Gráficos de lineas**: Distribución de causas ingresadas por año.
+- **Tabla de resúmenes**: Total de ingresos y porcentaje de delitos tentados por categoría.
+- **Mapa geográfico**:
+
+### 5. Exportación y Uso
+- El reporte fue diseñado para responder preguntas específicas como:
+  - ¿Cuáles son las tendencias de ingreso de causas por año?
+  - ¿Cuál es la evolución de los delitos sexuales y las medidas cautelares solicitadas?
+  - ¿Cuál es la tendencias en cuanto al por qué ingresan las causas al Juzgado?
+  - ¿Cuál es la distribución interna de causas en el juzgado?
+    
+- El archivo `.pbix` está listo para ser reutilizado o ajustado según nuevas necesidades.
+
 ## Resultados Finales
+
 - **Principales correcciones**:
   - Eliminación de cualquier vestigio de nombre propio.
   - Eliminación de columnas intrascendentes.
   - Estandarización de formatos en 2 columnas clave.
+
 
 ## Licencia
 Este proyecto está licenciado bajo la licencia CC BY 4.0. Consulta el archivo `LICENSE` para más información.
