@@ -17,7 +17,7 @@ limpieza-datos-proyecto/
 │   │   └── Esquema de registro original.xlsx
 │   ├── procesada/         # Datos procesados y limpios
 │       └── Dataset juzgado.csv
-├── analisis/
+└── analisis/
     ├── Estadistica ingresos 2020-2024.pdf # Gráficos de PowerBI para una visualización general
     └── Estadistica ingresos 2020-2024.pbix # Archivo de Power BI del dashboard
 
